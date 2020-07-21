@@ -62,43 +62,51 @@
     </div>
 
     <div class="parent">
-        <p>name of the test</p>
+        <p>/CRESCENDO_create_acc</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="key1=var1&key2=var2..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="email=var1&pass=var2" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Button</button>
+                <button class="btn btn-outline-secondary" type="button"
+                onclick="apicall(this.parentElement.parentElement.parentElement, 'CRESCENDO_create_acc', 'POST', this.parentElement.parentElement.children[0].value);"
+                >Button</button>
             </div>
         </div>    
     </div>
 
     <div class="parent">
-        <p>name of the test</p>
+        <p>/CRESCENDO_login</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="key1=var1&key2=var2..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="email=var1&pass=var2" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Button</button>
-            </div>
-        </div>    
-    </div>
-
-
-    <div class="parent">
-        <p>name of the test</p>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="key1=var1&key2=var2..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Button</button>
+                <button class="btn btn-outline-secondary" type="button"
+                onclick="apicall(this.parentElement.parentElement.parentElement, 'CRESCENDO_login', 'POST', this.parentElement.parentElement.children[0].value);"
+                >Button</button>
             </div>
         </div>    
     </div>
 
 
     <div class="parent">
-        <p>name of the test</p>
+        <p>/CRESCENDO_modifyval</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="key1=var1&key2=var2..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="email=var1&what=var2&newval=var3" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Button</button>
+                <button class="btn btn-outline-secondary" type="button"
+                onclick="apicall(this.parentElement.parentElement.parentElement, 'CRESCENDO_modifyval', 'POST', this.parentElement.parentElement.children[0].value);"
+                >Button</button>
+            </div>
+        </div>    
+    </div>
+
+
+    <div class="parent">
+        <p>/CRESCENDO_get_song</p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="title=Mario Bros. - Super Mario Bros. Theme.mid" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button"
+                onclick="apicall(this.parentElement.parentElement.parentElement, 'CRESCENDO_get_song', 'POST', this.parentElement.parentElement.children[0].value);"
+                >Button</button>
             </div>
         </div>    
     </div>
